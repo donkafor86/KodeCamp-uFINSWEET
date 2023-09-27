@@ -3,119 +3,131 @@
     margin: 0;
     box-sizing: border-box;
  }
+  body{font-family: 'Roboto', sans-serif;}
+
   header{
-    width: 80%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: auto;
-      padding: 14px 10px;
-      position: fixed;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    padding: 1em 0em;
+    color: black;
+    z-index: 50;
 
   }
+  .header-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
   header .logo {
     font-size: 15px;
   }
   
   nav {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
   }
   nav ul {
-      display: flex;
-      align-items: center;
-      column-gap: 40px;
-      border-right: 1px solid gray;
-      padding: 5px 20px 5px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    border-right: 1px solid gray;
+    padding: 5px 20px 5px 0;
   }
   nav ul li {
-      list-style: none;
+    list-style: none;
   }
   nav .right-contact {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
   }
   nav .right-contact .right-contact-text p {
-      font-size: 14px;
-      line-height: 18px;
+    font-size: 14px;
+    line-height: 18px;
   }
   
   /* main styling */
   
   main {
-      height: 91vh;
-      width: 80%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    height: 91vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
   main .container {
-      height: 80%;
-      width: 100%;
-      display: flex;
+    height: 80%;
+    width: 100%;
+    display: flex;
   }
   
   main .container .left-text {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: x-large;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
   }
+
   main .container .left-text hi {
-      width: 100%;
+    width: 100%;
   }
   
-  main .container .right-img {
-      width: 50%;
-      height: 100vh;
-      background-image: url("/img folder/Image.png");
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
+  main .container .main-right-img {
+    width: 50%;
+    background-image: url("../img folder/Image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
   }
   
-  main .container .right-img .Service {
-      position: absolute;
-      left: -20%;
-      top: 0;
+  .Service {
+    position: absolute;
+    left: -20%;
+    top: -6%;
   }
   
-  main .container .right-img .Rating {
-      position: absolute;
-      right: -20%;
-      bottom: 0;
+  .Rating{
+    position: absolute;
+    right: -20%;
+    bottom: -15%;
   }
+
   main .container .time-icon {
-      display: flex;
-      align-items: center;
-      column-gap: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
   }
+  
   main .container .time-icon {
-      gap: 10px;
-      margin-top: 20px;
-      font-size: x-small;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: x-small;
   }
   
   button {
-      border: 1px;
-      background-color: #FF6433;
-      width: 30%;
-      height: 8vh;
-      border-radius: 10px;
-      color: whitesmoke;
-      text-align: center;
+    border: 1px;
+    background-color: #FF6433;
+    width: 30%;
+    height: 8vh;
+    border-radius: 10px;
+    color: whitesmoke;
+    text-align: center;
   }
 
   .btn-prt {
-      gap: 10px;
-      margin-top: 20px;
-      margin-left: 0;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 0;
   }
   
