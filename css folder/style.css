@@ -1,133 +1,336 @@
- *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
  }
-  body{font-family: 'Roboto', sans-serif;}
 
-  header{
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    padding: 1em 0em;
-    color: black;
-    z-index: 50;
+body{font-family: 'Roboto', sans-serif;}
 
-  }
-  .header-container{
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+header{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  padding: 1em 0em;
+  color: black;
+  z-index: 1000;
+
   }
 
-  header .logo {
-    font-size: 15px;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-  }
-  nav ul {
-    display: flex;
-    align-items: center;
-    column-gap: 40px;
-    border-right: 1px solid gray;
-    padding: 5px 20px 5px 0;
-  }
-  nav ul li {
-    list-style: none;
-  }
-  nav .right-contact {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-  }
-  nav .right-contact .right-contact-text p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-  
-  /* main styling */
-  
-  main {
-    height: 91vh;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.header-container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
   }
 
-  main .container {
-    height: 80%;
-    width: 100%;
-    display: flex;
+header .logo {
+  font-size: 15px;
   }
   
-  main .container .left-text {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: x-large;
+nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   }
 
-  main .container .left-text hi {
-    width: 100%;
-  }
-  
-  main .container .main-right-img {
-    width: 50%;
-    background-image: url("../img folder/Image.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-  
-  .Service {
-    position: absolute;
-    left: -20%;
-    top: -6%;
-  }
-  
-  .Rating{
-    position: absolute;
-    right: -20%;
-    bottom: -15%;
+nav ul {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  border-right: 1px solid gray;
+  padding: 5px 20px 5px 0;
   }
 
-  main .container .time-icon {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
+nav ul li {
+  list-style: none;
+  }
+
+nav .right-contact {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  }
+
+nav .right-contact .right-contact-text p {
+  font-size: 14px;
+  line-height: 18px;
   }
   
-  main .container .time-icon {
-    gap: 10px;
-    margin-top: 20px;
-    font-size: x-small;
+/* Global  Styling */
+
+.container {
+  height: 80%;
+  width: 80%;
+  display: flex;
   }
+
+.parent-flex {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.service-left {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 15px;
+  } 
+  
+.service-right {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 15px;
+  }  
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  }
+
+.Know-more-about-us {
+  text-align: center;
+  margin-right: 200px;
+}
+
+.Learn-more-about-Us {
+  text-align: center;
+  margin-left: 600px;
+}
+
+button {
+  border: 1px;
+  background-color: #FF6433;
+  width: 30%;
+  height: 8vh;
+  border-radius: 10px;
+  color: whitesmoke;
+  text-align: center;
+  }
+
+.btn-prt {
+  gap: 10px;
+  margin-top: 20;
+  margin-left: 0;
+  }
+
+input {
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  background-image: url("/img folder/Input White.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+
+/* End of Global Styling */
+
+/* Main Styling */
+
+.parent-flex {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+/* main .container .left-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  } */
+
+main .container .left-text-hi {
+  width: 100%;
+  }
+  
+main .container .main-right-img {
+  /* width: 50%;
+  height: 100%; */
+  background-image: url("../img folder/Image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  }
+  
+.Service {
+  position: absolute;
+  left: -20%;
+  top: -6%;
+}
+  
+.Rating{
+  position: absolute;
+  right: -20%;
+  bottom: -15%;
+  }
+
+main .container .time-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  }
+  
+main .container .time-icon {
+  gap: 10px;
+  margin-top: 20px;
+  font-size: x-small;
+  }
+
+  /* car-servicing-styling */
+.car-servicing-section-background {
+  background-color: #e2e6e9;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  /* What we offer */
+
+#what-we-offer {
+  background-color: #F2F2F2;
+  }
+#what-we-offer .content {
+  width: 100%;
+  text-align: center;
+  }
+
+#what-we-offer .content .what-we-offer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
    
-  button {
-    border: 1px;
-    background-color: #FF6433;
-    width: 30%;
-    height: 8vh;
-    border-radius: 10px;
-    color: whitesmoke;
-    text-align: center;
   }
 
-  .btn-prt {
-    gap: 10px;
-    margin-top: 20px;
-    margin-left: 0;
+#what-we-offer .content .what-we-offer-cards .card {
+  background-color: white;
+  height: 180px;
+  width: 200px;
   }
+
+#what-we-offer .content .what-we-offer-cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Orange-Box {
+  width: 200px ;
+  height: 180px;
+  background-color: #FF6433;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  /* get in touch */
+#get-in-touch {
+  height: 70vh;
+  width: 100%;
+}
+
+#get-in-touch .first-row {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+#get-in-touch .first-row .left-car {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img folder/car-left.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#get-in-touch .first-row .left-car .left-car-card .content{
+  height: 100%;
+  width: 70%;
+  background-image: url("../img folder/Orange.png");
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+#get-in-touch .first-row .right-car {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img folder/car-right.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#get-in-touch .second-row {
+  height: 30%;
+  width: 100%;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#get-in-touch .second-row .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: x-large ;
+}
+
+#vl {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+h2 {
+  color: #661CE7;
+}
+
+
+  /* Footer Styling */
+.footer-background {
+  background-color: black;
+  }
+
   
