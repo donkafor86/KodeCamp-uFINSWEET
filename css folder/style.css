@@ -13,8 +13,7 @@ header{
   padding: 1em 0em;
   color: black;
   z-index: 1000;
-
-  }
+ }
 
 .header-container{
   width: 80%;
@@ -24,8 +23,8 @@ header{
   margin: auto;
   }
 
-header .logo {
-  font-size: 15px;
+header h1 {
+  font-size: 20px;
   }
   
 nav {
@@ -52,6 +51,16 @@ nav .right-contact {
   column-gap: 10px;
   }
 
+nav .right-contact .right-contact-icon {
+  background-color: #61c3a1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
 nav .right-contact .right-contact-text p {
   font-size: 14px;
   line-height: 18px;
@@ -66,8 +75,9 @@ nav .right-contact .right-contact-text p {
   }
 
 .parent-flex {
-  height: 80%;
-  width: 80%;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,11 +109,16 @@ nav .right-contact .right-contact-text p {
   display: flex;
   column-gap: 10px;
   margin-bottom: 15px;
-  }  
+  }
+
+.right-time-text {
+  font-size: 20px;
+}
 
 h1 {
   font-size: 35px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding-top: 10px;
   }
 
 .Know-more-about-us {
@@ -133,7 +148,7 @@ button {
   }
 
 input {
-  height: 10vh;
+  height:12vh;
   width: 100%;
   border: 0;
   margin: 2px;
@@ -167,8 +182,8 @@ input {
   justify-content: center;
   } */
 
-main .container .left-text-hi {
-  width: 100%;
+main .container .left-text .content {
+  width: 80%;
   }
   
 main .container .main-right-img {
@@ -179,6 +194,7 @@ main .container .main-right-img {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-left: auto;
   }
   
 .Service {
@@ -197,9 +213,6 @@ main .container .time-icon {
   display: flex;
   align-items: center;
   column-gap: 10px;
-  }
-  
-main .container .time-icon {
   gap: 10px;
   margin-top: 20px;
   font-size: x-small;
@@ -262,7 +275,7 @@ main .container .time-icon {
 }
 
 #get-in-touch .first-row {
-  height: 70%;
+  height: 75%;
   width: 100%;
   display: flex;
 }
@@ -279,19 +292,31 @@ main .container .time-icon {
   position: relative;
 }
 
-#get-in-touch .first-row .left-car .left-car-card .content{
+#get-in-touch .first-row .left-car .left-car-card {
   height: 100%;
   width: 70%;
-  background-image: url("../img folder/Orange.png");
+  background-color: #FF6433;
   position: absolute;
-  background-position: center;
-  background-size: contain;
-  right: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 40px;
 }
+
+.card-button{
+  width: 30%;
+  background-color: black;
+  color: #e2e6e9;
+  padding: 6px 15px;
+  margin-top: 12px;
+  } 
+
+.card .prt-btn {
+  gap: 10px;
+  margin-top: 20;
+  margin-left: 0;
+}
+
 
 #get-in-touch .first-row .right-car {
   width: 50%;
@@ -303,12 +328,17 @@ main .container .time-icon {
 }
 
 #get-in-touch .second-row {
-  height: 30%;
+  height: 25%;
   width: 100%;
   background-color: #F2F2F2;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+}
+
+#get-in-touch .second-row P{
+  font-size: 20px;
 }
 
 #get-in-touch .second-row .container {
@@ -317,7 +347,10 @@ main .container .time-icon {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: x-large ;
+}
+
+.left-car-card h2{
+  color: #e2e6e9;
 }
 
 #vl {
@@ -325,7 +358,11 @@ main .container .time-icon {
   align-content: center;
   justify-content: center;
 }
+
 h2 {
+  font-size: 35px;
+  margin-bottom: 1px;
+  padding-top: 4px;
   color: #661CE7;
 }
 
@@ -335,4 +372,375 @@ h2 {
   background-color: black;
   }
 
+/* For Mobile */
+  @media screen and (max-width: 425px) {
   
+    /* global */
+  .parent-flex {
+    height: auto;
+  }
+
+  .container {
+    height: auto;
+  }
+
+  header {
+    position: static;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    column-gap: 20px;
+    border: none;
+  }
+  nav ul li {
+    font-size: 12px;
+  }
+
+  nav .right-contact .right-contact-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  nav .right-contact .right-contact-icon .icon {
+    font-size: 1px;
+  }
+
+  nav .right-contact .right-contact-text p {
+    font-size: 10px;
+  }
+
+.container {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 15px;
+    row-gap: 15px;
+  }
+
+.left {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+.right {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.right-time-text{
+  font-size: 15px;
+}
+
+main .container .main-right-img {
+  height: 50vh;
+  }
+
+.Service {
+  position: absolute;
+  left: -20%;
+  top: -12%;
+}
+    
+.Rating{
+  position: absolute;
+  right: -18%;
+  bottom: -18%;
+}
+
+h1, .btn-prt {
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.btn-prt {
+  padding: 8px 20px;
+  }
+
+.Know-more-about-us {
+  text-align: center;
+  margin-right: 70px;
+}
+    
+.Learn-more-about-Us {
+  text-align: center;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+#get-in-touch .first-row {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#get-in-touch .first-row .left-car .left-car-card {
+  height: 30vh;
+  width: 70%;
+}
+
+#get-in-touch .first-row .left-car {
+  width: 100%;
+  height: 30vh;
+}
+
+#get-in-touch .first-row .right-car {
+  height: 30vh;
+  width: 100%;
+}
+
+#get-in-touch .second-row { 
+  flex-direction: column;
+}
+
+#get-in-touch .second-row .container .rating-content {
+  width: 70%;
+  height: 18vh;
+}
+#get-in-touch .second-row .container .rating-content p {
+  font-size: 10px;
+}
+
+.left-car-card h2 {
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card-button{
+  padding: 6px 18px;
+  width: 70%;
+  }
+  
+#get-in-touch .second-row .container{
+  width: 100%;
+  flex-direction: row;
+}
+
+h2{
+  font-size: 25px;
+  line-height: 15px;
+}
+
+#what-we-offer .content .what-we-offer-cards .card {
+  background-color: white;
+  height: 100px;
+  width: 120px;
+  }
+
+#Orange-Box {
+  width: 120px ;
+  height: 100px;
+}
+
+}
+
+
+/* For Tablet */ 
+
+@media screen and (min-width: 425px) and (max-width: 850px) {
+
+.parent-flex { 
+  height: auto;
+}
+P{
+  text-align: center;
+}
+
+.container {
+  height: auto;
+}
+
+header {
+  position: static;
+}
+
+.header-container {
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav {
+  flex-direction: column;
+}
+
+nav ul {
+  column-gap: 20px;
+  border: none;
+}
+nav ul li {
+  font-size: 18px;
+}
+
+nav .right-contact .right-contact-icon {
+  width: 22px;
+  height: 22px;
+}
+
+nav .right-contact .right-contact-icon .icon {
+  font-size: 12px;
+}
+
+nav .right-contact .right-contact-text p {
+  font-size: 15px;
+}
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px;
+  row-gap: 15px;
+}
+
+.left {
+  width: 100%;
+}
+
+.right {
+width: 100%;
+}
+
+main .container .left-text .content {
+position: absolute;
+}
+
+.right-time-text{
+font-size: 15px;
+}
+
+main .container .main-right-img {
+height: 65vh;
+}
+
+.Service {
+position: absolute;
+left: -18%;
+top: -9%;
+}
+  
+.Rating{
+position: absolute;
+right: -17%;
+bottom: -12%;
+}
+
+h1, .btn-prt {
+font-size: 35px;
+z-index: 100;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+.btn-prt {
+padding: 10px 20px;
+}
+
+.Know-more-about-us {
+text-align: center;
+margin-right: 70px;
+}
+  
+.Learn-more-about-Us {
+text-align: center;
+margin-left: 10px;
+font-size: 13px;
+}
+
+#get-in-touch .first-row {
+height: auto;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+#get-in-touch .first-row .left-car .left-car-card {
+height: 30vh;
+width: 70%;
+}
+
+#get-in-touch .first-row .left-car {
+width: 100%;
+height: 30vh;
+}
+
+#get-in-touch .first-row .right-car {
+height: 30vh;
+width: 100%;
+}
+
+#get-in-touch .second-row { 
+flex-direction: column;
+}
+
+#get-in-touch .second-row .container .rating-content {
+width: 70%;
+height: 18vh;
+}
+#get-in-touch .second-row .container .rating-content p {
+font-size: 10px;
+}
+
+.left-car-card h2 {
+font-size: 30px;
+line-height: 30px;
+justify-content: center;
+align-items: center;
+
+}
+
+.card-button{
+padding: 10px 20px;
+width: 30%;
+}
+
+#get-in-touch .second-row .container{
+width: 100%;
+flex-direction: row;
+}
+
+h2{
+font-size: 40px;
+align-content: center;
+}
+
+
+#what-we-offer .content .what-we-offer-cards .card {
+background-color: white;
+height: 100px;
+width: 120px;
+}
+
+#Orange-Box {
+width: 120px ;
+height: 100px;
+}
+
+} 
+
+
+
+
