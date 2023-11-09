@@ -705,11 +705,10 @@ font-size: 10px;
 }
 
 .left-car-card h2 {
-font-size: 30px;
-line-height: 30px;
+font-size: 20px;
+line-height: 20px;
 justify-content: center;
 align-items: center;
-
 }
 
 .card-button{
@@ -730,13 +729,13 @@ align-content: center;
 
 #what-we-offer .content .what-we-offer-cards .card {
 background-color: white;
-height: 100px;
-width: 120px;
+height: 140px;
+width: 140px;
 }
 
 #Orange-Box {
-width: 120px ;
-height: 100px;
+width: 140px ;
+height: 140px;
 }
 
 } 
